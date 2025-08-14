@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Technical Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+            <a class="nav-link" href="#Basic_HTML_Document_Structure">Basic HTML Document Structure</a>
+            <a class="nav-link" href="#Elements_and_Attributes">Elements and Attributes</a>
+            <a class="nav-link" href="#Core_HTML_Tags">Core HTML Tags</a>
+            <a class="nav-link" href="#Text_Formatting">Text Formatting</a>
+            <a class="nav-link" href="#Links_Hyperlinks">Links Hyperlinks</a>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction_to_HTML">
+                <header >
+                    Introduction to HTML
+                </header>
+                <p>HTML (HyperText Markup Language) is the <b>standard language for creating web pages</b>. It's the skeleton of any website, defining its structure and content. Along with CSS (for styling) and JavaScript (for interactivity), it forms the foundation of web development.</p>
+            <p>HTML uses tags to structure content. For example, a paragraph is defined by the `&lt;p&gt;` tag, and a main heading by `&lt;h1&gt;`.</p>
+            <h3>Importance and Evolution</h3>
+            <ul>
+                <li>It's the essential first step in learning web development.</li>
+                <li>HTML5, the latest major version, introduced semantic tags and multimedia support.</li>
+            </ul>
+            </section>
+            <section class="main-section" id="Basic_HTML_Document_Structure">
+                <header >Basic HTML Document Structure</header>
+                <p>Every HTML document follows a fundamental structure to be correctly interpreted by browsers.</p>
+            <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document Title&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;!-- Page content goes here --&gt;
+             &lt;/body&gt;
+            &lt;/html&gt;
+            </code></pre>
+            <p>Key components:</p>
+            <ul>
+                <li>`&lt;!DOCTYPE html&gt;`: Document type declaration (HTML5).</li>
+                <li>`&lt;html&gt;`: The root element, often with a `lang` attribute.</li>
+                <li>`&lt;head&gt;`: Contains metadata (not displayed on page).</li>
+                <li>`&lt;body&gt;`: Contains all visible page content.</li>
+            </ul>
+            </section>
+            <section class="main-section" id="Elements_and_Attributes">
+                <header >Elements and Attributes</header>
+                <p>In HTML, content is organized into **elements**. An element is defined by an opening tag, content, and a closing tag (e.g., `&lt;p&gt;Hello&lt;/p&gt;`).</p>
+            <p><strong>Attributes</strong> provide additional information about an element and are placed within the opening tag (e.g., `&lt;a href="link.html"&gt;`).</p>
+            <pre><code>
+&lt;!-- A paragraph element --&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;!-- An image element with src and alt attributes --&gt;
+&lt;img src="image.jpg" alt="A description of the image"&gt;
+            </code></pre>
+            <p>Some elements are "empty" and do not require a closing tag, like `&lt;br&gt;` (line break) or `&lt;img&gt;`.</p>
+       
+            </section>
+            <section class="main-section" id="Core_HTML_Tags">
+                <header >Core HTML Tags
+                </header>
+                <p>Here are some of the most common and essential HTML tags:</p>
+            <ul>
+                <li>`&lt;h1&gt;` to `&lt;h6&gt;`: Headings for different levels of importance.</li>
+                <li>`&lt;p&gt;`: Defines a paragraph of text.</li>
+                <li>`&lt;a&gt;`: Creates a hyperlink to another page or resource.</li>
+                <li>`&lt;img&gt;`: Embeds an image into the document.</li>
+                <li>`&lt;ul&gt;`, `&lt;ol&gt;`, `&lt;li&gt;`: Used for unordered, ordered, and list items respectively.</li>
+            </ul>
+            <pre><code>
+&lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;p&gt;This is some content.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            </code></pre>
+            </section>
+            <section class="main-section" id="Text_Formatting">
+                <header >Text Formatting
+                </header>
+                <p>HTML provides various tags to format text, enhancing its meaning and presentation.</p>
+            <p>Use `&lt;strong&gt;` or `&lt;b&gt;` for **bold text**, and `&lt;em&gt;` or `&lt;i&gt;` for *italic text*.</p>
+            <pre><code>
+&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
+&lt;p&gt;A phrase with &lt;em&gt;emphasis&lt;/em&gt;.&lt;/p&gt;
+            </code></pre>
+            <p>Other tags include `&lt;br&gt;` for a line break, `&lt;hr&gt;` for a horizontal rule, and `&lt;blockquote&gt;` for block quotes.</p>
+        
+            </section>
+            <section class="main-section" id="Links_Hyperlinks">
+            <header>Links Hyperlinks</header>
+            <p>This section will explain the `&lt;a&gt;` (anchor) element, the cornerstone of web navigation, and its essential attributes.</p>
+
+            <h3>The `&lt;a&gt;` (Anchor) Element</h3>
+            <p>The `&lt;a&gt;` tag is used to create hyperlinks, which connect one web page to another, or one section of a page to another section. It transforms text or images into clickable navigation elements.</p>
+            <p><strong>Basic Structure:</strong></p>
+            <pre><code>
+&lt;a href="destination-url"&gt;Link Text&lt;/a&gt;
+            </code></pre>
+            <p>The <code>href</code> attribute is the most crucial attribute for the `&lt;a&gt;` tag. It specifies the URL (Uniform Resource Locator) that the hyperlink points to. This URL can be:</p>
+            <ul>
+                <li><strong>Absolute URL:</strong> A full web address (e.g., <code>https://www.google.com</code>). Used for linking to external websites.</li>
+                <li><strong>Relative URL:</strong> A path to another file or resource within the same website (e.g., <code>about.html</code>, <code>images/picture.jpg</code>). Used for internal navigation.</li>
+                <li><strong>Anchor (Jump) Link:</strong> A link that points to a specific section within the <em>same</em> HTML document. This is achieved by using a <code>#</code> followed by the <code>id</code> of the target element (e.g., <code>&lt;a href="#section-id"&gt;Go to Section&lt;/a&gt;</code>).</li>
+            </ul>
+
+            <h3>Types of Links</h3>
+            <p>HTML links serve different purposes:</p>
+            <ul>
+                <li><strong>External Links:</strong> Navigate to a different website or domain.
+                    <pre><code>&lt;a href="https://developer.mozilla.org"&gt;Visit MDN Web Docs&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong>Internal Links:</strong> Navigate to other pages or resources <em>within the same website</em>.
+                    <pre><code>&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong>Anchor (Jump) Links:</strong> Allow users to jump to a specific part of the <em>current</em> page. The <code>href</code> must match an element's <code>id</code>.
+                    <pre><code>&lt;a href="#Introduction_to_HTML"&gt;Back to Introduction&lt;/a&gt;</code></pre>
+                </li>
+            </ul>
+
+            <h3>Useful Attributes for `&lt;a&gt;`</h3>
+            <p>Other important attributes enhance link functionality:</p>
+            <ul>
+                <li><strong><code>target</code> attribute:</strong> Specifies where to open the linked document.
+                    <pre><code>&lt;a href="https://newsite.com" target="_blank"&gt;Open in New Tab&lt;/a&gt;</code></pre>
+                    <code>_blank</code> opens in a new tab; <code>_self</code> (default) opens in the same tab.
+                </li>
+                <li><strong><code>title</code> attribute:</strong> Provides extra information (tooltip) when hovering over the link.
+                    <pre><code>&lt;a href="products.html" title="View our product catalog"&gt;Our Products&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong><code>rel</code> attribute:</strong> Defines the relationship between the documents (e.g., <code>nofollow</code>, <code>noopener</code>).
+                    <pre><code>&lt;a href="untrusted-link.html" target="_blank" rel="noopener noreferrer"&gt;External Link Securely&lt;/a&gt;</code></pre>
+                </li>
+            </ul>
+
+            <h3>Links to Specific Resources</h3>
+            <p>Beyond web pages, links can trigger other actions:</p>
+            <ul>
+                <li><strong>Email Links (<code>mailto:</code>):</strong> Opens the user's default email client.
+                    <pre><code>&lt;a href="mailto:info@example.com?subject=Inquiry"&gt;Send us an Email&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong>Telephone Links (<code>tel:</code>):</strong> Allows direct calls on mobile devices.
+                    <pre><code>&lt;a href="tel:+15551234567"&gt;Call Us&lt;/a&gt;</code></pre>
+                </li>
+            </ul>
+
+            <h3>Best Practices for Links</h3>
+            <ul>
+                <li><strong>Descriptive Link Text:</strong> Use meaningful text (e.g., "Learn More About HTML") instead of generic "Click Here." This aids accessibility and SEO.</li>
+                <li><strong>Accessibility:</strong> Ensure links are clearly distinguishable from regular text.</li>
+                <li><strong>Broken Links:</strong> Regularly check and fix any broken links to maintain a good user experience.</li>
+            </ul>
+        </section>
+            
+        </main>
+    </body>
+</html>

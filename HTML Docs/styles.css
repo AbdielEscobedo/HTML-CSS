@@ -1,0 +1,156 @@
+/* Estilos Generales y Reset Básico */
+* {
+    box-sizing: border-box; /* Incluye padding y border en el tamaño del elemento */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente legible */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    background-color: #f4f4f4; /* Fondo suave para la página */
+    color: #333; /* Color de texto oscuro */
+    scroll-behavior: smooth; /* Desplazamiento suave para enlaces ancla */
+}
+
+/* Contenedor Principal: Flexbox para Layout de dos columnas */
+#main-doc {
+    display: flex; /* Habilita Flexbox para #main-doc (aunque la navbar está fuera, esto afectará el contenido interno si lo hubiere) */
+    flex-direction: column; /* Contenido principal apilado verticalmente */
+    padding: 20px; /* Espaciado alrededor del contenido principal */
+    margin-left: 300px; /* Deja espacio para la navbar fija */
+}
+
+/* Navbar: Posicionamiento y Estilo */
+#navbar {
+    position: fixed; /* Mantiene la navbar siempre visible */
+    top: 0; /* Alineada en la parte superior */
+    left: 0; /* Alineada a la izquierda */
+    width: 300px; /* Ancho fijo para la navbar */
+    height: 100%; /* Ocupa el 100% de la altura del viewport */
+    background-color: #f8f8f8; /* Fondo claro para la navbar */
+    border-right: 1px solid #ccc; /* Borde separador a la derecha */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    overflow-y: auto; /* Permite scroll vertical si los enlaces son muchos */
+    padding-bottom: 20px; /* Espacio al final del scroll */
+}
+
+#navbar header {
+    font-size: 1.8em; /* Tamaño de fuente para el título de la navbar */
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center; /* Centra el texto del título */
+    border-bottom: 2px solid #ddd; /* Línea divisoria bajo el título */
+}
+
+#navbar .nav-link {
+    display: block; /* Hace que el enlace ocupe todo el ancho */
+    padding: 12px 20px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    color: #444; /* Color de texto para los enlaces */
+    border-bottom: 1px solid #eee; /* Línea sutil entre enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para hover */
+}
+
+#navbar .nav-link:hover {
+    background-color: #e0e0e0; /* Color de fondo al pasar el ratón */
+    color: #000; /* Color de texto más oscuro al pasar el ratón */
+}
+
+/* Contenido Principal: Estilos de Secciones */
+.main-section {
+    margin-bottom: 40px; /* Espacio entre cada sección principal */
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para las secciones */
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave */
+}
+
+.main-section header {
+    font-size: 2.2em; /* Tamaño de fuente para el título de la sección */
+    margin-bottom: 20px;
+    color: #0a4f9e; /* Un color azul para los títulos de sección */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0; /* Línea divisoria bajo el título de la sección */
+}
+
+.main-section p {
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
+    font-size: 1.05em;
+}
+
+.main-section ul,
+.main-section ol {
+    margin-left: 25px; /* Indentación para listas */
+    margin-bottom: 15px;
+}
+
+.main-section li {
+    margin-bottom: 8px;
+    list-style-type: disc; /* Viñetas por defecto para <ul> */
+}
+
+/* Estilos para bloques de código */
+.main-section pre {
+    background-color: #333; /* Fondo oscuro para bloques de código */
+    color: #f8f8f8; /* Texto claro para código */
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto; /* Permite scroll horizontal si el código es muy largo */
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada para código */
+    white-space: pre-wrap; /* Permite que el texto se ajuste */
+    word-wrap: break-word; /* Rompe palabras largas si es necesario */
+}
+
+.main-section code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #c0d9e5; /* Color ligeramente diferente para código en línea */
+}
+
+
+/* MEDIA QUERIES: Para dispositivos pequeños (móviles, tabletas en vertical) */
+@media (max-width: 850px) {
+    #navbar {
+        position: relative; /* La navbar ya no es fija, se apila */
+        width: 100%; /* Ocupa todo el ancho */
+        height: auto; /* Altura automática según contenido */
+        border-right: none; /* Elimina el borde de la derecha */
+        border-bottom: 1px solid #ccc; /* Añade un borde inferior */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 100; /* Asegura que esté por encima del contenido */
+    }
+
+    #main-doc {
+        margin-left: 0; /* El contenido principal ya no necesita margen para la navbar */
+        padding-top: 10px; /* Ajusta el padding superior si es necesario */
+    }
+
+    #navbar header {
+        font-size: 1.5em; /* Ajusta tamaño de fuente para móviles */
+    }
+
+    #navbar .nav-link {
+        text-align: center; /* Centra los enlaces en móvil */
+        border-bottom: none; /* Quita las líneas horizontales para un estilo más limpio */
+    }
+
+    /* Opcional: Podrías hacer que la navbar se contraiga con JavaScript en móviles */
+    /* Por simplicidad, aquí solo cambia su posición y tamaño */
+}
+
+/* Opcional: Ajustes para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+    #main-doc, .main-section {
+        padding: 10px; /* Reduce el padding general */
+    }
+
+    .main-section header {
+        font-size: 1.8em; /* Reduce aún más los títulos de sección */
+    }
+
+    #navbar header {
+        font-size: 1.2em;
+    }
+}

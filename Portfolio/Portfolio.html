@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal - Abdiel Escobedo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Inicio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#about-me">Acerca de Mí</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a id="profile-link" href="https://www.freecodecamp.org/fcc-efcbfacf-17a6-4fcc-b238-fba880660d22" target="_blank">Mi Perfil</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <div class="welcome-content">
+            <h1>¡Hola, soy Abdiel!</h1>
+            <p>Desarrolador Web</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Mis Proyectos Recientes</h2>
+        <div class="projects-grid">
+            <div class="project-tile">
+                <a href="https://www.youtube.com/watch?v=12mvW9TDgIw" target="_blank">
+                    <img src="[ruta/a/imagen/proyecto1.jpg]" alt="[Título del Proyecto 1]" class="project-image">
+                    <h3>[Título del Proyecto 1]</h3>
+                    <p>Una breve descripción de tu proyecto. Por ejemplo: Un sitio web interactivo para gestionar tareas diarias, construido con HTML, CSS y JavaScript puro.</p>
+                </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="https://klettwl.com/store/product/proyectos-2-student-textbook" target="_blank">
+                    <img src="[ruta/a/imagen/proyecto2.jpg]" alt="[Título del Proyecto 2]" class="project-image">
+                    <h3>[Título del Proyecto 2]</h3>
+                    <p>Descripción: Una aplicación web responsiva para [lo que hace el proyecto], utilizando [tecnologías clave].</p>
+                </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="https://quizlet.com/231839700/srcs-ap-spanish-proyecto-marta-flash-cards/" target="_blank">
+                    <img src="[ruta/a/imagen/proyecto3.jpg]" alt="[Título del Proyecto 3]" class="project-image">
+                    <h3>[Título del Proyecto 3]</h3>
+                    <p>Descripción: Este proyecto es un [tipo de proyecto] que explora [algún concepto o técnica].</p>
+                </a>
+            </div>
+
+        </div>
+        <a href="https://github.com/topics/portfolio-website" class="btn-more-projects" target="_blank">Ver Más Proyectos &gt;</a>
+    </section>
+
+    <section id="about-me">
+        <h2>Acerca de Mí</h2>
+        <div class="about-content">
+            <img src="[ruta/a/tu/foto-perfil.jpg]" alt="Tu Foto de Perfil" class="profile-avatar">
+            <p>
+                ¡Hola de nuevo! Soy [Tu Nombre]. Me apasiona [menciona tus intereses, por ejemplo: crear experiencias digitales, resolver problemas con código, diseñar interfaces de usuario intuitivas]. Tengo experiencia en [enumera algunas habilidades o áreas de enfoque, por ejemplo: desarrollo front-end, diseño UI/UX, bases de datos].
+            </p>
+            <p>
+                Mi objetivo es [menciona tu objetivo profesional o lo que buscas, por ejemplo: construir soluciones innovadoras que impacten positivamente, colaborar en proyectos desafiantes]. Estoy siempre aprendiendo y buscando nuevas oportunidades para crecer.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Hablemos</h2>
+        <p>¿Tienes una idea o un proyecto en mente? ¡No dudes en contactarme!</p>
+        <div class="contact-links">
+            <a href="mailto:[tu-email@ejemplo.com]" class="contact-btn"><i class="fas fa-envelope"></i> Enviar Email</a>
+            <a href="https://es.linkedin.com/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.chicmagazine.com.mx/estilo-de-vida/dia-de-las-redes-sociales-lo-que-tu-favorita-dice-de-tu-personalidad" target="_blank" class="contact-btn"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> [Tu Nombre Completo]. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
