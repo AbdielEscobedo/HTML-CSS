@@ -1,0 +1,46 @@
+header{
+    
+    text-align: center;
+    
+}
+
+.date{
+    font-weight: bold;
+}
+
+.inline{
+    display:inline-block;
+}
+
+.img{
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    background-color: bisque;
+    border-radius: 50px;
+}
+
+.imagen{
+    width:600px;
+    height: auto;
+}
+
+#tribute-info{
+    margin: auto;
+    padding: 0 15% 0 15%;
+    background-color: rgb(228, 222, 213);
+    border-radius: 15px;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+address{
+    text-align: center;
+    color: bisque;
+}
+
+a{
+    color: burlywood;
+}
